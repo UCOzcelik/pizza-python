@@ -47,3 +47,12 @@ class Pizza:
         if topping in self.toppings:
             self.toppings.remove(topping)
 
+
+
+class Pizza:
+    def __init__(self, name, toppings, price):
+        # Basis-Eigenschaften der Pizza
+        self.name = name
+        self.toppings = toppings
+        self.price = price
+
