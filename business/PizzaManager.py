@@ -7,7 +7,7 @@ class Pizza:
         self.toppings = toppings
         self.price = price
 
- def display_pizza(self):
+    def display_pizza(self):
         # Zeigt die Pizzadetails: Name, Beläge, Preis
         print(self.name, "mit", ", ".join(self.toppings), "- Preis:", self.price, "€")
 
@@ -19,3 +19,4 @@ class Pizza:
         # Entfernt Belag, falls vorhanden
         if topping in self.toppings:
             self.toppings.remove(topping)
+
