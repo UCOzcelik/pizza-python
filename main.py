@@ -45,6 +45,10 @@ def main():
     # Dritte Aufgabe: Funktionalität zum Auflisten aller Pizzen aufrufen
     list_all_pizzas(pizza_list)
 
+    # Neue Funktionalität: Filter für Pizzen nach eingegebenen Belägen anwenden
+    toppings_input = input("\nGib die gewünschten Beläge ein (z.B. 'Schinken Ananas'): ")
+    list_pizzas_with_toppings(pizza_list, toppings_input)
+
 if __name__ == "__main__":
     main()
 
