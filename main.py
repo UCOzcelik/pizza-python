@@ -7,6 +7,18 @@ def list_all_pizzas(pizza_list):
     for pizza in pizza_list:
         pizza.display_pizza()
 
+def list_pizzas_with_toppings(pizza_list, toppings_input):
+    # Teilt die eingegebenen Beläge in eine Liste auf
+    toppings = toppings_input.split()
+    print("\nPizzen mit den Belägen:", ", ".join(toppings))
+
+    # Durchläuft die Liste der Pizzen und filtert die passenden heraus
+    for pizza in pizza_list:
+        # Prüft, ob alle eingegebenen Beläge in den Belägen der Pizza enthalten sind
+        if all(topping in pizza.toppings for topping in toppings):
+            pizza.display_pizza()
+
+
 def main():
     # Erste Aufgabe: Einzelne Pizza erstellen und testen
     margherita = Pizza("Margherita", ["Tomatensauce", "Mozzarella"], 7.50)
