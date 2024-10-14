@@ -61,6 +61,9 @@ def main():
     toppings_input = input("\nGib die gewünschten Beläge ein (z.B. 'Schinken Ananas'): ")
     list_pizzas_with_toppings(pizza_list, toppings_input)
 
+    # Fehlender Aufruf von select_pizza_by_name wird hier ergänzt
+    select_pizza_by_name(pizza_list)
+
 if __name__ == "__main__":
     main()
 
