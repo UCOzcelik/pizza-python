@@ -29,7 +29,7 @@ def select_pizza_by_name(pizza_list):
             print("\nGewählte Pizza:")
             pizza.display_pizza()
                         # Abfrage des Gutscheincodes
-            code = input("\nGib einen Gutscheincode ein, falls vorhanden: ").strip()
+            code = input("\nGib einen Gutscheincode ein, falls vorhanden: ")
             if code == "PIZZA10":
                 rabattierter_preis = pizza.price * 0.9  # 10% Rabatt
                 print(f"Preis mit Rabatt: {rabattierter_preis:.2f} €")
