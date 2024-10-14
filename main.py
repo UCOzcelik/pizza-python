@@ -10,6 +10,11 @@ def list_all_pizzas(pizza_list):
 def list_pizzas_with_toppings(pizza_list, toppings_input):
     toppings = toppings_input.split()
     print("\nPizzen mit den Belägen:", ", ".join(toppings))
+    
+    # Debugging Zeile hinzugefügt, um alle Pizzen mit ihren Belägen zu überprüfen
+    for pizza in pizza_list:
+        print(f"Pizza {pizza.name} hat die Beläge: {', '.join(pizza.toppings)}")
+    
     filtered_pizzas = [pizza for pizza in pizza_list if all(topping in pizza.toppings for topping in toppings)]
     for pizza in filtered_pizzas:
         pizza.display_pizza()
