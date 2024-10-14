@@ -28,7 +28,14 @@ def select_pizza_by_name(pizza_list):
         if pizza.name.lower() == pizza_name.lower():
             print("\nGewählte Pizza:")
             pizza.display_pizza()
-            return         
+                        # Abfrage des Gutscheincodes
+            code = input("\nGib einen Gutscheincode ein, falls vorhanden: ").strip()
+            if code == "PIZZA10":
+                rabattierter_preis = pizza.price * 0.9  # 10% Rabatt
+                print(f"Preis mit Rabatt: {rabattierter_preis:.2f} €")
+            else:
+                print(f"Normaler Preis: {pizza.price:.2f} €")
+            return
     # Falls die Pizza nicht gefunden wird
     print(f"Die Pizza '{pizza_name}' ist nicht verfügbar.")
 
