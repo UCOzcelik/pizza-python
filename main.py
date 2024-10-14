@@ -19,6 +19,18 @@ def list_pizzas_with_toppings(pizza_list, toppings_input):
         if all(topping in pizza.toppings for topping in toppings):
             pizza.display_pizza()
 
+def select_pizza_by_name(pizza_list):
+    # Benutzer nach dem Namen der gewünschten Pizza fragen
+    pizza_name = input("\nGib den Namen der Pizza ein, die du auswählen möchtest: ")
+    # Suche nach der Pizza in der Liste
+    for pizza in pizza_list:
+        if pizza.name.lower() == pizza_name.lower():
+            print("\nGewählte Pizza:")
+            pizza.display_pizza()
+            return         
+    # Falls die Pizza nicht gefunden wird
+    print(f"Die Pizza '{pizza_name}' ist nicht verfügbar.")
+
 
 def main():
     # Erste Aufgabe: Einzelne Pizza erstellen und testen
