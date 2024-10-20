@@ -16,7 +16,7 @@ class Pizza:
         self.toppings.append(topping)
 
     def remove_topping(self, topping):
-        # Entfernt Belag, falls vorhanden
+        # Entfernt Belag (falls vorhanden)
         if topping in self.toppings:
             self.toppings.remove(topping)
 
