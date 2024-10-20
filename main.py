@@ -58,14 +58,14 @@ def main():
     margherita.remove_topping("Tomatensauce")
     margherita.display_pizza()
 
-    # Zweite Aufgabe: Liste von Pizzen erstellen
+    # Liste von Pizzen erstellen
     pepperoni = Pizza("Pepperoni", ["Tomatensauce", "Mozzarella", "Pepperoni"], 8.50)
     hawaiian = Pizza("Hawaiian", ["Tomatensauce", "Mozzarella", "Schinken", "Ananas"], 9.00)
 
     # Liste von Pizzen erstellen
     pizza_list = [margherita, pepperoni, hawaiian]
 
-    # Dritte Aufgabe: Funktionalität zum Auflisten aller Pizzen aufrufen
+    # Zeige alle verfügbaren Pizzen mit ihren Belägen
     list_all_pizzas(pizza_list)
 
 # Filter der Pizzen basierend auf den eingegebenen Belägen
