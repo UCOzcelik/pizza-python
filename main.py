@@ -44,7 +44,7 @@ def select_pizza_by_name(pizza_list):
 
 
 def main():
-    # Erste Aufgabe: Einzelne Pizza erstellen und testen
+    # Einzelne Pizza erstellen und testen
     margherita = Pizza("Margherita", ["Tomatensauce", "Mozzarella"], 7.50)
 
     # Zeige die Details der Pizza
