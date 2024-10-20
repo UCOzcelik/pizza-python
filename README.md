@@ -4,4 +4,14 @@ Dieses Projekt stellt ein interaktives Pyhton-Programm zur Verwaltung von Pizzen
 
 Das Programm hat folgende Funktionen:
 
-**Pizza-Klasse:**
+**Pizza-Klasse:** Eine Klasse, die jede Pizza mit den Attributen Name, Beläge und Preis repräsentiert. Diese Klasse bietet Methoden zum Hinzufügen und Entfernen von Belägen sowie zur Anzeige der Pizzadetails.
+
+**Liste von Pizzen:** In der main.py wird eine Liste von Pizzen erstellt, die verschiedene Pizzasorten mit ihren jeweiligen Belägen und Preisen speichert.
+
+**Auflisten aller Pizzen:** Das Programm zeigt alle Pizzen in der Liste mit ihren Details (Name, Beläge, Preis) an.
+
+**Filtern nach Belägen:** Der Benutzer kann nach spezifischen Belägen suchen, und das Programm zeigt nur die Pizzen an, die alle eingegebenen Beläge enthalten.
+
+**Auswahl einer Pizza nach Name:** Der Benutzer kann den Namen einer Pizza eingeben, um eine bestimmte Pizza auszuwählen. Falls die Pizza nicht verfügbar ist, wird eine entsprechende Nachricht angezeigt.
+
+**Preisberechnung mit Rabattcode:** Der Benutzer kann einen Gutscheincode eingeben. Wenn der Code "PIZZA10" verwendet wird, erhält der Benutzer 10% Rabatt auf den Preis der ausgewählten Pizza.
