@@ -2,13 +2,13 @@
 
 class Pizza:
     def __init__(self, name, toppings, price):
-        # Basis-Eigenschaften der Pizza
+        # Eigenschaften der Pizza
         self.name = name
         self.toppings = toppings
         self.price = price
 
     def display_pizza(self):
-        # Zeigt die Pizzadetails: Name, Beläge, Preis
+        # Zeigt die Pizzadetails: Name, Beläge und Preis
         print(self.name, "mit", ", ".join(self.toppings), "- Preis:", self.price, "€")
 
     def add_topping(self, topping):
