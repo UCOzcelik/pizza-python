@@ -16,6 +16,7 @@ Das Programm hat folgende Funktionen:
 
 **Preisberechnung mit Rabattcode:** Der Benutzer kann einen Gutscheincode eingeben. Wenn der Code "PIZZA10" verwendet wird, erhält der Benutzer 10% Rabatt auf den Preis der ausgewählten Pizza.
 
+
 Die Verwendung lautet wie folgt:
 
 **Pizza anzeigen:** Alle Pizzen in der Liste können mit ihren Details aufgerufen werden.
