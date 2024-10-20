@@ -15,3 +15,13 @@ Das Programm hat folgende Funktionen:
 **Auswahl einer Pizza nach Name:** Der Benutzer kann den Namen einer Pizza eingeben, um eine bestimmte Pizza auszuwählen. Falls die Pizza nicht verfügbar ist, wird eine entsprechende Nachricht angezeigt.
 
 **Preisberechnung mit Rabattcode:** Der Benutzer kann einen Gutscheincode eingeben. Wenn der Code "PIZZA10" verwendet wird, erhält der Benutzer 10% Rabatt auf den Preis der ausgewählten Pizza.
+
+Die Verwendung lautet wie folgt:
+
+**Pizza anzeigen:** Alle Pizzen in der Liste können mit ihren Details aufgerufen werden.
+
+**Belag hinzufügen/entfernen:** Du kannst Beläge zur Pizza hinzufügen oder entfernen.
+
+**Pizzaauswahl:** Wähle eine Pizza nach Namen aus und berechne den Preis mit oder ohne Rabatt.
+
+**Filtern nach Belägen:** Suche Pizzen basierend auf den eingegebenen Belägen.
