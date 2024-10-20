@@ -8,13 +8,15 @@ def list_all_pizzas(pizza_list):
         pizza.display_pizza()
 
 def list_pizzas_with_toppings(pizza_list, toppings_input):
+    # Teilt die eingegebenen Beläge in eine Liste auf
     toppings = toppings_input.split()
     print("\nPizzen mit den Belägen:", ", ".join(toppings))
     
     # Debugging Zeile hinzugefügt, um alle Pizzen mit ihren Belägen zu überprüfen
     for pizza in pizza_list:
         print(f"Pizza {pizza.name} hat die Beläge: {', '.join(pizza.toppings)}")
-    
+
+    # Filtert die Pizzen basierend auf den eingegebenen Belägen
     filtered_pizzas = [pizza for pizza in pizza_list if all(topping in pizza.toppings for topping in toppings)]
     for pizza in filtered_pizzas:
         pizza.display_pizza()
@@ -28,7 +30,8 @@ def select_pizza_by_name(pizza_list):
         if pizza.name.lower() == pizza_name.lower():
             print("\nGewählte Pizza:")
             pizza.display_pizza()
-                        # Abfrage des Gutscheincodes
+            
+            # Abfrage des Gutscheincodes
             code = input("\nGib einen Gutscheincode ein, falls vorhanden: ")
             if code == "PIZZA10":
                 rabattierter_preis = pizza.price * 0.9  # 10% Rabatt
