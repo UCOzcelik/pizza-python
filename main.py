@@ -74,7 +74,7 @@ def main():
 
     # Überprüfung, ob gefilterte Pizzen vorhanden sind, bevor nach dem Namen gefragt wird
     if filtered_pizzas:
-        select_pizza_by_name(filtered_pizzas)  # Neu: Auswahl nur auf gefilterte Pizzen anwenden
+        select_pizza_by_name(filtered_pizzas)  # Auswahl nur auf gefilterte Pizzen anwenden
     else:
         print("Keine Pizzen mit den angegebenen Belägen verfügbar.")  # Ausgabe, wenn keine passenden Pizzen
 
